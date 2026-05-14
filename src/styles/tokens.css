@@ -16,14 +16,14 @@
   --color-brand-accent-light: #fef6e4; /* Amber tint */
 
   /* Background Layers */
-  --color-bg-base: #fafaf8; /* Page background — warm off-white */
+  --color-bg-base: #d6d6d4; /* Page background — warm off-white */
   --color-bg-surface: #ffffff; /* Cards, modals, dropdowns */
   --color-bg-subtle: #f3f2ef; /* Section backgrounds, inputs */
   --color-bg-muted: #e8e6e1; /* Dividers, skeleton base */
   --color-bg-inverse: #1a3a5c; /* Dark sections */
 
   /* Text Colors */
-  --color-text-primary: #646464;
+  --color-text-primary: #4f4f4f;
   --color-text-secondary: #4a5568; /* Supporting text */
   --color-text-muted: #8a96a3; /* Placeholder, metadata */
   --color-text-inverse: #ffffff; /* Text on dark backgrounds */
@@ -31,7 +31,8 @@
   --color-text-link: #c84b2f; /* Links */
 
   /* Border Colors */
-  --color-border-light: #ede9e3; /* Subtle dividers */
+  --color-border-light: #ede9e3;
+  --color-border-muted: #cbc8c4; 
   --color-border-default: #d4cfc8; /* Normal borders */
   --color-border-strong: #b0aba3; /* Emphasized borders */
   --color-border-brand: #c84b2f; /* Brand-colored borders */
@@ -163,13 +164,14 @@
   --color-brand-primary: #f26b4e; /* Brighter coral-red */
   --color-brand-primary-hover: #ff7d62; /* Even brighter on hover */
   --color-brand-primary-light: #1f1210; /* Very dark tint for badges */
-  --color-brand-secondary: #6366f1; /* Indigo — modern, premium feel */
+  --color-brand-secondary: #696bea; /* Indigo — modern, premium feel */
   --color-brand-accent: #fbbf24; /* Amber — unchanged */
   --color-brand-accent-light: #1c1710;
 
   /* Border Colors — subtle, not blue */
   --color-border-light: #27272a; /* Almost invisible — structural */
   --color-border-default: #3f3f46; /* Normal input borders */
+  --color-border-muted: #272726;
   --color-border-strong: #52525b; /* Emphasized / hover state */
   --color-border-brand: #f26b4e;
 

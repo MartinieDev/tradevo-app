@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useRef, useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import { CATEGORIES } from '../../../data/mockProducts';
 import styles from './Navbar.module.css';
 import MegaMenu from './MegaMenu';
@@ -9,14 +10,15 @@ import ThemeToggle from '../../../ui/ThemeToggle/ThemeToggle';
 import HeartIcon from '../../../ui/icons/navigation/HeartIcon';
 import CartIcon from '../../../ui/icons/navigation/CartIcon';
 import MobileMenu from './MobileMenu/MobileMenu';
-import { AnimatePresence } from 'framer-motion';
 import Logo from '../../../ui/Logo/Logo';
+import { useCart } from '../../../context/cartContext';
 
 function Navbar() {
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState('Martins');
+  const { totalItems } = useCart();
 
   // Actual State
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -123,9 +125,9 @@ function Navbar() {
           >
             <HeartIcon />
 
-            {[1].length > 0 && (
+            {[].length > 0 && (
               /* ---- WishlistCount----- */
-              <span className={styles.navbar__badge}>{wishListCount}</span>
+              <span className={styles.navbar__badge}>{totalItems}</span>
             )}
           </Link>
 
@@ -137,9 +139,9 @@ function Navbar() {
           >
             <CartIcon />
 
-            {[1].length > 0 && (
+            {totalItems > 0 && (
               /* ---- CartCount-----  */
-              <span className={styles.navbar__badge}>{wishListCount}</span>
+              <span className={styles.navbar__badge}>{totalItems}</span>
             )}
           </Link>
 
