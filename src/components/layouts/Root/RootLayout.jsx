@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
@@ -32,12 +32,15 @@ function PageLoader() {
 function RootLayout() {
   return (
     <>
+      <ScrollRestoration />
       <Navbar />
+
       <main className="page-content">
         <Suspense fallback={<PageLoader />}>
           <Outlet />
         </Suspense>
       </main>
+
       {/* <Footer /> */}
     </>
   );

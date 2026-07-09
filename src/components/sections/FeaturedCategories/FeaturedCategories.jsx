@@ -84,8 +84,8 @@ function FeaturedCategories() {
                     <p className={styles.dropdown__heading}>Subcategories</p>
 
                     {/* Dropdown links */}
-                    {activeCategoryObj.items.map((catItem) => (
-                      <DropdownLink key={catItem} catItem={catItem} />
+                    {activeCategoryObj.items.map((catItemObj) => (
+                      <DropdownLink key={catItemObj.id} catItemObj={catItemObj} activeId={activeId}/>
                     ))}
                   </div>
 

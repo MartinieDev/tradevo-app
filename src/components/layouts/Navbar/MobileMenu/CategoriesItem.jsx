@@ -4,7 +4,7 @@ import styles from './MobileMenu.module.css';
 function CategoriesItem({ categoryObj, handleClose }) {
   return (
     <Link
-      to={categoryObj.id === 'all' ? '/shop' : `/shop/${categoryObj.id}`}
+      to={categoryObj.id === 'all' ? '/shop' : `/shop?category=${categoryObj.id}`}
       className={styles.drawer__category_link}
       onClick={() => handleClose()}
     >

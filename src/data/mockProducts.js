@@ -14,153 +14,272 @@ export const CATEGORIES = [
 // Format: { main, alt1, alt2 } — use as many as the product needs
 const IMAGE_MAP = {
   // Electronics
-  headphones1:  'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80',
-  headphones2:  'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80',
-  headphones3:  'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80',
-  keyboard1:    'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80',
-  keyboard2:    'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&q=80',
-  monitor1:     'https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&q=80',
-  monitor2:     'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80',
-  watch1:       'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80',
-  watch2:       'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80',
-  watch3:       'https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&q=80',
-  hub1:         'https://images.unsplash.com/photo-1625014618427-fbc980b974f5?w=800&q=80',
-  hub2:         'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-  earbuds1:     'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80',
-  earbuds2:     'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80',
-  webcam1:      'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80',
-  tablet1:      'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80',
-  tablet2:      'https://images.unsplash.com/photo-1600359746315-119f1360d663?w=800&q=80',
-  speaker1:     'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80',
-  speaker2:     'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80',
-  projector1:   'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80',
-  projector2:   'https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?w=800&q=80',
-  powerbank1:   'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&q=80',
-  laptopstand1: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80',
-  charger1:     'https://images.unsplash.com/photo-1633381638729-27f730955c23?w=800&q=80',
-  mouse1:       'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80',
+  headphones1:
+    'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80',
+  headphones2:
+    'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80',
+  headphones3:
+    'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80',
+  keyboard1:
+    'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80',
+  keyboard2:
+    'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&q=80',
+  monitor1:
+    'https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&q=80',
+  monitor2:
+    'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80',
+  watch1:
+    'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80',
+  watch2:
+    'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80',
+  watch3:
+    'https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&q=80',
+  hub1: 'https://images.unsplash.com/photo-1625014618427-fbc980b974f5?w=800&q=80',
+  hub2: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+  earbuds1:
+    'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80',
+  earbuds2:
+    'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80',
+  webcam1:
+    'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80',
+  tablet1:
+    'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80',
+  tablet2:
+    'https://images.unsplash.com/photo-1600359746315-119f1360d663?w=800&q=80',
+  speaker1:
+    'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80',
+  speaker2:
+    'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80',
+  projector1:
+    'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80',
+  projector2:
+    'https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?w=800&q=80',
+  powerbank1:
+    'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&q=80',
+  laptopstand1:
+    'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80',
+  charger1:
+    'https://images.unsplash.com/photo-1633381638729-27f730955c23?w=800&q=80',
+  mouse1:
+    'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80',
 
   // New gadgets
-  iphone16pm1:    'https://images.unsplash.com/photo-1726878638059-93e2e5a55376?w=800&q=80',
-  iphone16pm2:    'https://images.unsplash.com/photo-1721863751847-cfe24e038f53?w=800&q=80',
-  iphone13pm1:    'https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=800&q=80',
-  iphone13pm2:    'https://images.unsplash.com/photo-1635434803802-fc6f546c0e3f?w=800&q=80',
-  macbookpro1:    'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80',
-  macbookpro2:    'https://images.unsplash.com/photo-1611186871525-7f8f374aa2d6?w=800&q=80',
-  ipadpro1:       'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80',
-  ipadpro2:       'https://images.unsplash.com/photo-1561154464-82e9adf32764?w=800&q=80',
-  applewatch1:    'https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&q=80',
-  applewatch2:    'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&q=80',
-  galaxys24u1:    'https://images.unsplash.com/photo-1706864256861-c964f3b838e3?w=800&q=80',
-  galaxys24u2:    'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&q=80',
-  galaxytab1:     'https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=800&q=80',
-  galaxytab2:     'https://images.unsplash.com/photo-1623126908029-58cb08a2b272?w=800&q=80',
-  galaxywatch1:   'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&q=80',
-  galaxywatch2:   'https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&q=80',
-  galaxybuds1:    'https://images.unsplash.com/photo-1628538137623-ce4ddf3b3d82?w=800&q=80',
-  galaxybuds2:    'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80',
-  airpods1:       'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&q=80',
-  airpods2:       'https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=800&q=80',
-  appletv1:       'https://images.unsplash.com/photo-1593359677879-a4bb92f829e1?w=800&q=80',
-  homepod1:       'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80',
-  samsungtv1:     'https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&q=80',
-  samsungtv2:     'https://images.unsplash.com/photo-1539794830467-1f1755804d13?w=800&q=80',
-  galaxyzfold1:   'https://images.unsplash.com/photo-1663530670768-8a66af8e7cba?w=800&q=80',
-  galaxyzfold2:   'https://images.unsplash.com/photo-1622532374248-7fb9ceabfaf6?w=800&q=80',
+  iphone16pm1:
+    'https://images.unsplash.com/photo-1726878638059-93e2e5a55376?w=800&q=80',
+  iphone16pm2:
+    'https://images.unsplash.com/photo-1721863751847-cfe24e038f53?w=800&q=80',
+  iphone13pm1:
+    'https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=800&q=80',
+  iphone13pm2:
+    'https://images.unsplash.com/photo-1635434803802-fc6f546c0e3f?w=800&q=80',
+  macbookpro1:
+    'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80',
+  macbookpro2:
+    'https://images.unsplash.com/photo-1611186871525-7f8f374aa2d6?w=800&q=80',
+  ipadpro1:
+    'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80',
+  ipadpro2:
+    'https://images.unsplash.com/photo-1561154464-82e9adf32764?w=800&q=80',
+  applewatch1:
+    'https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&q=80',
+  applewatch2:
+    'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&q=80',
+  galaxys24u1:
+    'https://images.unsplash.com/photo-1706864256861-c964f3b838e3?w=800&q=80',
+  galaxys24u2:
+    'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&q=80',
+  galaxytab1:
+    'https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=800&q=80',
+  galaxytab2:
+    'https://images.unsplash.com/photo-1623126908029-58cb08a2b272?w=800&q=80',
+  galaxywatch1:
+    'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&q=80',
+  galaxywatch2:
+    'https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&q=80',
+  galaxybuds1:
+    'https://images.unsplash.com/photo-1628538137623-ce4ddf3b3d82?w=800&q=80',
+  galaxybuds2:
+    'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80',
+  airpods1:
+    'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800&q=80',
+  airpods2:
+    'https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=800&q=80',
+  appletv1:
+    'https://images.unsplash.com/photo-1593359677879-a4bb92f829e1?w=800&q=80',
+  homepod1:
+    'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80',
+  samsungtv1:
+    'https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&q=80',
+  samsungtv2:
+    'https://images.unsplash.com/photo-1539794830467-1f1755804d13?w=800&q=80',
+  galaxyzfold1:
+    'https://images.unsplash.com/photo-1663530670768-8a66af8e7cba?w=800&q=80',
+  galaxyzfold2:
+    'https://images.unsplash.com/photo-1622532374248-7fb9ceabfaf6?w=800&q=80',
 
   // Fashion
-  hoodie1:      'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80',
-  hoodie2:      'https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?w=800&q=80',
-  hoodie3:      'https://images.unsplash.com/photo-1614495640574-afb62e8a5d37?w=800&q=80',
-  chinos1:      'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80',
-  chinos2:      'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?w=800&q=80',
-  shirt1:       'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80',
-  shirt2:       'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&q=80',
-  sneakers1:    'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80',
-  sneakers2:    'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&q=80',
-  sneakers3:    'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&q=80',
-  bag1:         'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80',
-  bag2:         'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80',
-  jumper1:      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&q=80',
-  jumper2:      'https://images.unsplash.com/photo-1614495640574-afb62e8a5d37?w=800&q=80',
-  leatherwatch1:'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&q=80',
-  leatherwatch2:'https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&q=80',
-  tights1:      'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&q=80',
-  tights2:      'https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&q=80',
-  glasses1:     'https://images.unsplash.com/photo-1591076482161-42ce6da69f67?w=800&q=80',
+  hoodie1:
+    'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80',
+  hoodie2:
+    'https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?w=800&q=80',
+  hoodie3:
+    'https://images.unsplash.com/photo-1614495640574-afb62e8a5d37?w=800&q=80',
+  chinos1:
+    'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80',
+  chinos2:
+    'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?w=800&q=80',
+  shirt1:
+    'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80',
+  shirt2:
+    'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&q=80',
+  sneakers1:
+    'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80',
+  sneakers2:
+    'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&q=80',
+  sneakers3:
+    'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&q=80',
+  bag1: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80',
+  bag2: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80',
+  jumper1:
+    'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&q=80',
+  jumper2:
+    'https://images.unsplash.com/photo-1614495640574-afb62e8a5d37?w=800&q=80',
+  leatherwatch1:
+    'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&q=80',
+  leatherwatch2:
+    'https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&q=80',
+  tights1:
+    'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&q=80',
+  tights2:
+    'https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&q=80',
+  glasses1:
+    'https://images.unsplash.com/photo-1591076482161-42ce6da69f67?w=800&q=80',
 
   // Home & Living
-  coffee1:      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
-  coffee2:      'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
-  coffee3:      'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
-  shelf1:       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
-  shelf2:       'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&q=80',
-  duvet1:       'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80',
-  duvet2:       'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80',
-  teapot1:      'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80',
-  teapot2:      'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=800',
-  diffuser1:    'https://images.unsplash.com/photo-1732229035217-e7e42f61af4b?q=80&w=800',
-  diffuser2:    'https://images.unsplash.com/photo-1732229033245-a1b93c1baa65?q=80&w=800',
-  desk1:        'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80',
-  desk2:        'https://images.unsplash.com/photo-1541558869434-2840d308329a?w=800&q=80',
-  airpurifier1: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80',
-  airpurifier2: 'https://images.unsplash.com/photo-1607941421036-a9b1ac0e9fd8?w=800&q=80',
-  candle1:      'https://images.unsplash.com/photo-1603905179139-db12ab535ca9?w=800&q=80',
-  frenchpress1: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80',
-  cuttingboard1:'https://images.unsplash.com/photo-1593759608142-e976b5e3e0b7?w=800&q=80',
-  pillowcase1:  'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80',
-  spicerack1:   'https://images.unsplash.com/photo-1607195765591-38c7d49bb92f?w=800&q=80',
+  coffee1:
+    'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+  coffee2:
+    'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+  coffee3:
+    'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+  shelf1:
+    'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+  shelf2:
+    'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&q=80',
+  duvet1:
+    'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80',
+  duvet2:
+    'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80',
+  teapot1:
+    'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80',
+  teapot2:
+    'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=800',
+  diffuser1:
+    'https://images.unsplash.com/photo-1732229035217-e7e42f61af4b?q=80&w=800',
+  diffuser2:
+    'https://images.unsplash.com/photo-1732229033245-a1b93c1baa65?q=80&w=800',
+  desk1:
+    'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80',
+  desk2:
+    'https://images.unsplash.com/photo-1541558869434-2840d308329a?w=800&q=80',
+  airpurifier1:
+    'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80',
+  airpurifier2:
+    'https://images.unsplash.com/photo-1607941421036-a9b1ac0e9fd8?w=800&q=80',
+  candle1:
+    'https://images.unsplash.com/photo-1603905179139-db12ab535ca9?w=800&q=80',
+  frenchpress1:
+    'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80',
+  cuttingboard1:
+    'https://images.unsplash.com/photo-1593759608142-e976b5e3e0b7?w=800&q=80',
+  pillowcase1:
+    'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80',
+  spicerack1:
+    'https://images.unsplash.com/photo-1607195765591-38c7d49bb92f?w=800&q=80',
 
   // Beauty
-  serum1:       'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80',
-  serum2:       'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&q=80',
-  guasha1:      'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=800&q=80',
-  cream1:       'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80',
-  cream2:       'https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=800&q=80',
-  niacinamide1: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&q=80',
-  moisturiser1: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80',
+  serum1:
+    'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80',
+  serum2:
+    'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&q=80',
+  guasha1:
+    'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=800&q=80',
+  cream1:
+    'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80',
+  cream2:
+    'https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=800&q=80',
+  niacinamide1:
+    'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&q=80',
+  moisturiser1:
+    'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80',
 
   // Sports
-  bands1:       'https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&q=80',
-  bands2:       'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80',
-  jumprope1:    'https://images.unsplash.com/photo-1598575468023-85e8e70e8d6e?w=800&q=80',
-  yogamat1:     'https://images.unsplash.com/photo-1601925228008-0b0a1d0c26e5?w=800&q=80',
-  yogamat2:     'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
-  foamroller1:  'https://images.unsplash.com/photo-1618355776464-8666794d2520?w=800&q=80',
-  posture1:     'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80',
-  acupressure1: 'https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80',
-  shaker1:      'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=800&q=80',
-  multitool1:   'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=800&q=80',
+  bands1:
+    'https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&q=80',
+  bands2:
+    'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80',
+  jumprope1:
+    'https://images.unsplash.com/photo-1598575468023-85e8e70e8d6e?w=800&q=80',
+  yogamat1:
+    'https://images.unsplash.com/photo-1601925228008-0b0a1d0c26e5?w=800&q=80',
+  yogamat2:
+    'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
+  foamroller1:
+    'https://images.unsplash.com/photo-1618355776464-8666794d2520?w=800&q=80',
+  posture1:
+    'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80',
+  acupressure1:
+    'https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80',
+  shaker1:
+    'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=800&q=80',
+  multitool1:
+    'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=800&q=80',
 
   // Books
-  book1:        'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&q=80',
-  book2:        'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80',
-  book3:        'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=800&q=80',
-  book4:        'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80',
-  book5:        'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800&q=80',
-  book6:        'https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800&q=80',
+  book1: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&q=80',
+  book2:
+    'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80',
+  book3:
+    'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=800&q=80',
+  book4:
+    'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80',
+  book5:
+    'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800&q=80',
+  book6:
+    'https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800&q=80',
 
   // Toys
-  robot1:       'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&q=80',
-  robot2:       'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
-  puzzle1:      'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=800&q=80',
-  artkit1:      'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=800&q=80',
-  rccar1:       'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+  robot1:
+    'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&q=80',
+  robot2:
+    'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
+  puzzle1:
+    'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=800&q=80',
+  artkit1:
+    'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=800&q=80',
+  rccar1:
+    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
 
   // Food & Drink
-  matcha1:      'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=800&q=80',
-  matcha2:      'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80',
-  chocolate1:   'https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=800&q=80',
-  chocolate2:   'https://images.unsplash.com/photo-1548907040-4baa42d10919?w=800&q=80',
-  coldbrew1:    'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
-  oliveoil1:    'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&q=80',
+  matcha1:
+    'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=800&q=80',
+  matcha2:
+    'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80',
+  chocolate1:
+    'https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=800&q=80',
+  chocolate2:
+    'https://images.unsplash.com/photo-1548907040-4baa42d10919?w=800&q=80',
+  coldbrew1:
+    'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+  oliveoil1:
+    'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&q=80',
 };
 
 // Helper — returns the Unsplash URL for a key, with optional size params ignored
 // (size params were used with picsum; Unsplash URLs include ?w= already)
 function img(key) {
   const url = IMAGE_MAP[key];
-  
+
   if (!url) {
     console.warn(`[mockProducts] No image mapped for key: "${key}"`);
     return `https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/960px-No-Image-Placeholder.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20200912122019`;
@@ -168,14 +287,27 @@ function img(key) {
   return url;
 }
 
+const now = Date.now();
+const daysAgo = (days) => now - days * 24 * 60 * 60 * 1000;
+
+// isNew  cisNewProduct(),
+const NEW_PRODUCT_DAYS = 14;
+
+export const isNewProduct = (product) => {
+  const daysInMs = NEW_PRODUCT_DAYS * 24 * 60 * 60 * 1000;
+
+  return Date.now() - product.createdAt <= daysInMs;
+};
+
 export const mockProducts = [
   // ── ELECTRONICS ──────────────────────────────────────────
-  
+
   {
     id: 1,
     name: 'ProSound Wireless Headphones X1',
     slug: 'prosound-wireless-headphones-x1',
     category: 'electronics',
+    subcategory: 'headphones',
     price: 89.99,
     originalPrice: 149.99,
     discount: 40,
@@ -195,14 +327,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(1),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 2,
     name: 'UltraSlim Mechanical Keyboard',
     slug: 'ultraslim-mechanical-keyboard',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 119.0,
     originalPrice: 159.0,
     discount: 25,
@@ -222,14 +357,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(1),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 3,
     name: '4K Portable Monitor 15.6"',
     slug: '4k-portable-monitor-15-6',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 229.0,
     originalPrice: 299.0,
     discount: 23,
@@ -249,14 +387,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(2),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 4,
     name: 'SmartWatch Pro Series 5',
     slug: 'smartwatch-pro-series-5',
     category: 'electronics',
+    subcategory: 'smartwatches',
     price: 199.99,
     originalPrice: 279.99,
     discount: 29,
@@ -276,14 +417,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(2),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 5,
     name: 'GigaCharge 100W USB-C Hub',
     slug: 'gigacharge-100w-usb-c-hub',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 49.99,
     originalPrice: 74.99,
     discount: 33,
@@ -303,14 +447,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(3),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 6,
     name: 'NoisePods Air True Wireless',
     slug: 'noisepods-air-true-wireless',
     category: 'electronics',
+    subcategory: 'headphones',
     price: 59.0,
     originalPrice: 99.0,
     discount: 40,
@@ -330,14 +477,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(3),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 7,
     name: 'DeskCam 4K Webcam',
     slug: 'deskcam-4k-webcam',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 79.99,
     originalPrice: 109.99,
     discount: 27,
@@ -357,14 +507,17 @@ export const mockProducts = [
     inStock: false,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(4),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 8,
     name: 'ArcPad Drawing Tablet Pro',
     slug: 'arcpad-drawing-tablet-pro',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 179.0,
     originalPrice: 239.0,
     discount: 25,
@@ -384,8 +537,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(4),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
 
   // ── FASHION ───────────────────────────────────────────────
@@ -394,6 +549,7 @@ export const mockProducts = [
     name: 'Urban Oversized Hoodie',
     slug: 'urban-oversized-hoodie',
     category: 'fashion',
+    subcategory: 'mens-clothing',
     price: 44.99,
     originalPrice: 69.99,
     discount: 36,
@@ -413,14 +569,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(5),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 10,
     name: 'Slim Tapered Chinos',
     slug: 'slim-tapered-chinos',
     category: 'fashion',
+    subcategory: 'mens-clothing',
     price: 39.99,
     originalPrice: 59.99,
     discount: 33,
@@ -440,14 +599,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(5),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 11,
     name: 'Linen Button-Down Shirt',
     slug: 'linen-button-down-shirt',
     category: 'fashion',
+    subcategory: 'mens-clothing',
     price: 34.99,
     originalPrice: 54.99,
     discount: 36,
@@ -467,14 +629,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(6),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 12,
     name: 'Running Sneakers Ultralight',
     slug: 'running-sneakers-ultralight',
     category: 'fashion',
+    subcategory: 'shoes-sneakers',
     price: 69.99,
     originalPrice: 109.99,
     discount: 36,
@@ -494,14 +659,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(6),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 13,
     name: 'Structured Leather Tote Bag',
     slug: 'structured-leather-tote-bag',
     category: 'fashion',
+    subcategory: 'bags',
     price: 89.0,
     originalPrice: 139.0,
     discount: 36,
@@ -521,14 +689,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(7),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 14,
     name: 'Merino Wool Crew Neck Jumper',
     slug: 'merino-wool-crew-neck-jumper',
     category: 'fashion',
+    subcategory: 'mens-clothing',
     price: 79.99,
     originalPrice: 119.99,
     discount: 33,
@@ -548,8 +719,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(7),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
 
   // ── HOME & LIVING ─────────────────────────────────────────
@@ -558,6 +731,7 @@ export const mockProducts = [
     name: 'Pour-Over Coffee Station Set',
     slug: 'pour-over-coffee-station-set',
     category: 'home',
+    subcategory: 'kitchen',
     price: 54.99,
     originalPrice: 84.99,
     discount: 35,
@@ -577,14 +751,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(8),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 16,
     name: 'Modular Shelf System Oak',
     slug: 'modular-shelf-system-oak',
     category: 'home',
+    subcategory: 'storage',
     price: 149.0,
     originalPrice: 219.0,
     discount: 32,
@@ -604,14 +781,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(8),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 17,
     name: 'Linen Duvet Cover Set Queen',
     slug: 'linen-duvet-cover-set-queen',
     category: 'home',
+    subcategory: 'bedding',
     price: 89.0,
     originalPrice: 129.0,
     discount: 31,
@@ -631,14 +811,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(9),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 18,
     name: 'Japanese Cast Iron Teapot',
     slug: 'japanese-cast-iron-teapot',
     category: 'home',
+    subcategory: 'kitchen',
     price: 44.99,
     originalPrice: 64.99,
     discount: 31,
@@ -658,14 +841,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(9),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 19,
     name: 'Ceramic Diffuser + Essential Oils',
     slug: 'ceramic-diffuser-essential-oils',
     category: 'home',
+    subcategory: 'decor',
     price: 34.99,
     originalPrice: 54.99,
     discount: 36,
@@ -685,14 +871,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(10),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 20,
     name: 'Adjustable Standing Desk Converter',
     slug: 'adjustable-standing-desk-converter',
     category: 'home',
+    subcategory: 'furniture',
     price: 199.0,
     originalPrice: 279.0,
     discount: 29,
@@ -712,8 +901,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(10),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
 
   // ── BEAUTY ────────────────────────────────────────────────
@@ -722,6 +913,7 @@ export const mockProducts = [
     name: 'Vitamin C Brightening Serum',
     slug: 'vitamin-c-brightening-serum',
     category: 'beauty',
+    subcategory: 'skincare',
     price: 28.99,
     originalPrice: 44.99,
     discount: 36,
@@ -741,14 +933,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(11),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 22,
     name: 'Gua Sha Facial Tool Rose Quartz',
     slug: 'gua-sha-facial-tool-rose-quartz',
     category: 'beauty',
+    subcategory: 'tools',
     price: 16.99,
     originalPrice: 29.99,
     discount: 43,
@@ -768,14 +963,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(11),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 23,
     name: 'Retinol Night Renewal Cream',
     slug: 'retinol-night-renewal-cream',
     category: 'beauty',
+    subcategory: 'skincare',
     price: 32.99,
     originalPrice: 49.99,
     discount: 34,
@@ -795,8 +993,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(12),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
 
   // ── SPORTS ───────────────────────────────────────────────
@@ -805,6 +1005,7 @@ export const mockProducts = [
     name: 'Resistance Band Set (11 Piece)',
     slug: 'resistance-band-set-11-piece',
     category: 'sports',
+    subcategory: 'gym-equipment',
     price: 24.99,
     originalPrice: 44.99,
     discount: 44,
@@ -824,14 +1025,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(12),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 25,
     name: 'Smart Jump Rope with Counter',
     slug: 'smart-jump-rope-with-counter',
     category: 'sports',
+    subcategory: 'running',
     price: 19.99,
     originalPrice: 34.99,
     discount: 43,
@@ -851,14 +1055,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(13),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 26,
     name: 'Yoga Mat 6mm Non-Slip Premium',
     slug: 'yoga-mat-6mm-non-slip-premium',
     category: 'sports',
+    subcategory: 'yoga-pilates',
     price: 39.99,
     originalPrice: 59.99,
     discount: 33,
@@ -878,8 +1085,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(13),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
 
   // ── BOOKS ────────────────────────────────────────────────
@@ -888,6 +1097,7 @@ export const mockProducts = [
     name: 'Atomic Habits — James Clear',
     slug: 'atomic-habits-james-clear',
     category: 'books',
+    subcategory: 'self-help',
     price: 14.99,
     originalPrice: 22.99,
     discount: 35,
@@ -907,14 +1117,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(14),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 28,
     name: 'Deep Work — Cal Newport',
     slug: 'deep-work-cal-newport',
     category: 'books',
+    subcategory: 'self-help',
     price: 12.99,
     originalPrice: 19.99,
     discount: 35,
@@ -934,8 +1147,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(14),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
 
   // ── TOYS & KIDS ──────────────────────────────────────────
@@ -944,6 +1159,7 @@ export const mockProducts = [
     name: 'STEM Robot Building Kit',
     slug: 'stem-robot-building-kit',
     category: 'toys',
+    subcategory: 'stem-kits',
     price: 49.99,
     originalPrice: 79.99,
     discount: 38,
@@ -963,14 +1179,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(15),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 30,
     name: 'Wooden Montessori Puzzle Set',
     slug: 'wooden-montessori-puzzle-set',
     category: 'toys',
+    subcategory: 'educational',
     price: 22.99,
     originalPrice: 34.99,
     discount: 34,
@@ -990,8 +1209,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(15),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
 
   // ── FOOD & DRINKS ────────────────────────────────────────
@@ -1000,6 +1221,7 @@ export const mockProducts = [
     name: 'Premium Matcha Starter Kit',
     slug: 'premium-matcha-starter-kit',
     category: 'food',
+    subcategory: 'coffee-tea',
     price: 39.99,
     originalPrice: 59.99,
     discount: 33,
@@ -1019,14 +1241,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: true,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(16),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 32,
     name: 'Artisan Dark Chocolate Collection',
     slug: 'artisan-dark-chocolate-collection',
     category: 'food',
+    subcategory: 'snacks',
     price: 24.99,
     originalPrice: 39.99,
     discount: 38,
@@ -1046,8 +1271,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(16),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
 
   // ── MORE ELECTRONICS ──────────────────────────────────────
@@ -1056,6 +1283,7 @@ export const mockProducts = [
     name: 'Portable Bluetooth Speaker 360°',
     slug: 'portable-bluetooth-speaker-360',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 79.99,
     originalPrice: 119.99,
     discount: 33,
@@ -1075,14 +1303,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(17),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 34,
     name: 'Mini Projector 1080p HomeSync',
     slug: 'mini-projector-1080p-homesync',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 159.0,
     originalPrice: 219.0,
     discount: 27,
@@ -1102,14 +1333,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(17),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 35,
     name: 'Solar Power Bank 26800mAh',
     slug: 'solar-power-bank-26800mah',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 44.99,
     originalPrice: 69.99,
     discount: 36,
@@ -1129,8 +1363,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(18),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
 
   // ── MORE FASHION ──────────────────────────────────────────
@@ -1139,6 +1375,7 @@ export const mockProducts = [
     name: 'Classic Leather Watch Brown',
     slug: 'classic-leather-watch-brown',
     category: 'fashion',
+    subcategory: 'watches',
     price: 129.0,
     originalPrice: 189.0,
     discount: 32,
@@ -1158,14 +1395,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(18),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 37,
     name: 'Compression Running Tights',
     slug: 'compression-running-tights',
     category: 'fashion',
+    subcategory: 'womens-clothing',
     price: 34.99,
     originalPrice: 54.99,
     discount: 36,
@@ -1185,8 +1425,10 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(19),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
 
   // ── MORE HOME ─────────────────────────────────────────────
@@ -1195,6 +1437,7 @@ export const mockProducts = [
     name: 'Air Purifier HEPA H13',
     slug: 'air-purifier-hepa-h13',
     category: 'home',
+    subcategory: 'home-appliances',
     price: 129.0,
     originalPrice: 189.0,
     discount: 32,
@@ -1214,14 +1457,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(19),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 39,
     name: 'Scented Soy Candle Gift Set',
     slug: 'scented-soy-candle-gift-set',
     category: 'home',
+    subcategory: 'decor',
     price: 32.99,
     originalPrice: 49.99,
     discount: 34,
@@ -1241,14 +1487,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(20),
     soldCount: 0,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 40,
     name: 'French Press Coffee Maker 1L',
     slug: 'french-press-coffee-maker-1l',
     category: 'home',
+    subcategory: 'kitchen',
     price: 27.99,
     originalPrice: 44.99,
     discount: 38,
@@ -1268,14 +1517,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(20),
     soldCount: 0,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 41,
     name: 'Laptop Stand Adjustable Aluminium',
     slug: 'laptop-stand-adjustable-aluminium',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 39.99,
     originalPrice: 59.99,
     discount: 33,
@@ -1295,14 +1547,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(21),
     soldCount: 12300,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 42,
     name: 'Wireless Charging Pad 15W',
     slug: 'wireless-charging-pad-15w',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 19.99,
     originalPrice: 34.99,
     discount: 43,
@@ -1322,14 +1577,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(21),
     soldCount: 34500,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 43,
     name: 'Blue Light Blocking Glasses',
     slug: 'blue-light-blocking-glasses',
     category: 'fashion',
+    subcategory: 'accessories',
     price: 22.99,
     originalPrice: 39.99,
     discount: 43,
@@ -1349,14 +1607,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(22),
     soldCount: 23400,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 44,
     name: 'Bamboo Cutting Board Set',
     slug: 'bamboo-cutting-board-set',
     category: 'home',
+    subcategory: 'kitchen',
     price: 29.99,
     originalPrice: 44.99,
     discount: 33,
@@ -1376,14 +1637,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(22),
     soldCount: 18900,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 45,
     name: 'Niacinamide 10% Serum',
     slug: 'niacinamide-10-serum',
     category: 'beauty',
+    subcategory: 'skincare',
     price: 12.99,
     originalPrice: 19.99,
     discount: 35,
@@ -1403,14 +1667,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(23),
     soldCount: 67800,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 46,
     name: 'Foam Roller Deep Tissue',
     slug: 'foam-roller-deep-tissue',
     category: 'sports',
+    subcategory: 'recovery',
     price: 24.99,
     originalPrice: 39.99,
     discount: 38,
@@ -1430,14 +1697,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(23),
     soldCount: 23400,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 47,
     name: 'The Psychology of Money',
     slug: 'psychology-of-money',
     category: 'books',
+    subcategory: 'business',
     price: 13.99,
     originalPrice: 19.99,
     discount: 30,
@@ -1457,14 +1727,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(24),
     soldCount: 56700,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 48,
     name: 'Kids Art Supply Mega Kit',
     slug: 'kids-art-supply-mega-kit',
     category: 'toys',
+    subcategory: 'arts-crafts',
     price: 34.99,
     originalPrice: 54.99,
     discount: 36,
@@ -1484,14 +1757,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(24),
     soldCount: 12300,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 49,
     name: 'Cold Brew Coffee Kit',
     slug: 'cold-brew-coffee-kit',
     category: 'food',
+    subcategory: 'coffee-tea',
     price: 19.99,
     originalPrice: 29.99,
     discount: 33,
@@ -1511,14 +1787,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(25),
     soldCount: 8900,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 50,
     name: 'Posture Corrector Back Support',
     slug: 'posture-corrector-back-support',
     category: 'sports',
+    subcategory: 'recovery',
     price: 18.99,
     originalPrice: 29.99,
     discount: 37,
@@ -1538,14 +1817,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(25),
     soldCount: 34500,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 51,
     name: 'RGB Gaming Mouse 7 Buttons',
     slug: 'rgb-gaming-mouse-7-buttons',
     category: 'electronics',
+    subcategory: 'accessories',
     price: 34.99,
     originalPrice: 54.99,
     discount: 36,
@@ -1565,14 +1847,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(26),
     soldCount: 18900,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 52,
     name: 'Silk Pillowcase Set Queen',
     slug: 'silk-pillowcase-set-queen',
     category: 'home',
+    subcategory: 'bedding',
     price: 39.99,
     originalPrice: 59.99,
     discount: 33,
@@ -1592,14 +1877,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(26),
     soldCount: 23400,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 53,
     name: 'Hyaluronic Acid Face Moisturiser',
     slug: 'hyaluronic-acid-face-moisturiser',
     category: 'beauty',
+    subcategory: 'skincare',
     price: 19.99,
     originalPrice: 29.99,
     discount: 33,
@@ -1619,14 +1907,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(27),
     soldCount: 45600,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 54,
     name: 'Acupressure Mat & Pillow Set',
     slug: 'acupressure-mat-pillow-set',
     category: 'sports',
+    subcategory: 'yoga-pilates',
     price: 29.99,
     originalPrice: 49.99,
     discount: 40,
@@ -1646,14 +1937,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(27),
     soldCount: 18900,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 55,
     name: 'Think Again — Adam Grant',
     slug: 'think-again-adam-grant',
     category: 'books',
+    subcategory: 'self-help',
     price: 13.99,
     originalPrice: 21.99,
     discount: 36,
@@ -1673,14 +1967,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(28),
     soldCount: 23400,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 56,
     name: 'Remote Control Car Offroad',
     slug: 'remote-control-car-offroad',
     category: 'toys',
+    subcategory: 'action-figures',
     price: 44.99,
     originalPrice: 69.99,
     discount: 36,
@@ -1700,14 +1997,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(28),
     soldCount: 7890,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 57,
     name: 'Spice Rack Organiser Rotating',
     slug: 'spice-rack-organiser-rotating',
     category: 'home',
+    subcategory: 'kitchen',
     price: 24.99,
     originalPrice: 39.99,
     discount: 38,
@@ -1727,14 +2027,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(29),
     soldCount: 15600,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 58,
     name: 'Protein Shaker Bottle 700ml',
     slug: 'protein-shaker-bottle-700ml',
     category: 'sports',
+    subcategory: 'gym-equipment',
     price: 14.99,
     originalPrice: 22.99,
     discount: 35,
@@ -1754,14 +2057,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: true,
-    isNew: false,
+    createdAt: daysAgo(29),
     soldCount: 56700,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
   {
     id: 59,
     name: 'Greek Olive Oil Gift Set',
     slug: 'greek-olive-oil-gift-set',
     category: 'food',
+    subcategory: 'cooking',
     price: 34.99,
     originalPrice: 54.99,
     discount: 36,
@@ -1781,14 +2087,17 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: true,
+    createdAt: daysAgo(30),
     soldCount: 4560,
+    isBrandNew: false,
+    isFairlyUsed: true,
   },
   {
     id: 60,
     name: 'Pocket Knife Multitool 18-in-1',
     slug: 'pocket-knife-multitool-18-in-1',
     category: 'sports',
+    subcategory: 'outdoor',
     price: 29.99,
     originalPrice: 49.99,
     discount: 40,
@@ -1808,42 +2117,35 @@ export const mockProducts = [
     inStock: true,
     isFeatured: false,
     isFlashDeal: false,
-    isNew: false,
+    createdAt: daysAgo(30),
     soldCount: 12300,
+    isBrandNew: true,
+    isFairlyUsed: false,
   },
 ];
-
-// -------- TEMPLATE OF THE OBJECT ------------
-// {
-//   id: 1,
-//   name: 'ProSound Wireless Headphones X1',
-//   slug: 'prosound-wireless-headphones-x1',
-//   category: 'electronics',
-//   price: 89.99,
-//   originalPrice: 149.99,
-//   discount: 40,
-//   rating: 0,
-//   reviewCount: 0,
-//   images: [img('headphones1'), img('headphones2'), img('headphones3')],
-//   thumbnail: img('headphones1', 200, 200),
-//   description:
-//     'Premium wireless headphones with 40-hour battery life, active noise cancellation, and crystal-clear audio. Built for commuters and audiophiles alike.',
-//   specs: {
-//     Battery: '40 hours',
-//     Connectivity: 'Bluetooth 5.3',
-//     Weight: '250g',
-//     Colors: 'Black, White, Navy',
-//   },
-//   tags: ['wireless', 'noise-cancelling', 'audio', 'travel'],
-//   inStock: true,
-//   isFeatured: true,
-//   isFlashDeal: true,
-//   isNew: false,
-//   soldCount: 0,
-// },
 
 // ── HELPER FUNCTIONS ─────────────────────────────────────────
 // These are used by the Shop page and FilterContext to filter/sort products.
 export const flashDeals = mockProducts.filter(
   (productObj) => productObj.isFlashDeal,
 );
+
+export const getProductBySlug = (slug) =>
+  mockProducts.find((productObj) => productObj.slug === slug);
+
+export const getRelatedProducts = (receivedCategory, limit = 10) =>
+  mockProducts
+    .filter((prodObj) => prodObj.category === receivedCategory)
+    .slice(0, limit);
+
+// Filter products by category AND optional subcategory
+// Usage: getCategoryItems('electronics') or getCategoryItems('electronics', 'headphones')
+export const getCategoryItems = (receivedCategory, receivedSubcategory) =>
+  mockProducts.filter((prodObj) => {
+    if (receivedCategory && prodObj.category !== receivedCategory) return false;
+
+    if (receivedSubcategory && prodObj.subcategory !== receivedSubcategory)
+      return false;
+
+    return true;
+  });
